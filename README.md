@@ -1,3 +1,3 @@
 # home
 
-Pagina principal de mi web principal
+Pagina principal de mi web
