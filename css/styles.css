@@ -2,9 +2,15 @@ body{
 	font-family: "yanone", Arial, Helvetica;
 	font-size: 15px;
 	background: url("../img/construccion.jpg");
-	/*background-attachment: fixed;				/*el fondo se queda fijo*/*/
+	/*background-attachment: fixed;				/*el fondo se queda fijo*/
 	background-repeat: no-repeat;
 	background-size: cover;
 	/*background-size: auto;*/
+
 }
 
+a {		
+	font-weight: 600; /*esta entre normal y bold (negrita)*/
+	text-decoration: none; /*le saco el subrayado*/
+	color: black;
+}
