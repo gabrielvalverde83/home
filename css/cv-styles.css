@@ -1,0 +1,691 @@
+/*Estilos globales (generales) ----------------------------------------------------
+----------------------------------------------------------------------------------*/
+
+* {
+	box-sizing: border-box;		/* el * incluye a todos los elementos, sino los padding van a sumar al with del elemento y todo se va a desarmar */
+	margin: 0px;
+	padding: 0px;
+}
+
+article,		/*codigo de compatibilidad*/
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main, 
+menu,
+nav,
+section,
+summary { 
+  display: block;
+  margin:0px;
+}
+
+html,
+body {
+	height:100%;
+}
+
+body {
+	margin:0px; /*obligo al body a no tener el margen de 8px que trae por defecto, esto es para que me saque la linea blanca que queda arriba*/
+	font-family: Calibri, sans-serif;	/*fuente del texto*/
+	font-size: 21px;
+	line-height: 25px; 	/*Interlineado*/
+	background-color: black;	/*Color de fondo*/
+	background-image: url("../img/fondo.png");
+	background-position: 50%;
+	/*background-repeat: no-repeat;*/
+	background-size: cover;  
+	 
+	/*color:#fff; color de texto, utiliza hexadecimales. si se repiten los valores coloca 3 en vez de 6*/
+}
+
+#pantalla {
+	width:100%;
+	height:auto;
+	position: relative;
+	float:left;
+}
+
+.contenedor {
+	width:1170px;		
+	height:auto;
+	position:relative;	
+	margin:0px auto;		/* con esto me lo centra, no con float left */
+	padding-left:15px;		/* siempre deja una separacion entre la pantalla general y el borde de la pantalla */
+	padding-right:15px;		/* siempre deja una separacion entre la pantalla general y el borde de la pantalla */
+	overflow: hidden;		/* para limpiar los float*/
+	max-width: 100%;		/* para que no aparezca la barra del scroll abajo, sino siempre va a ser de 1170 px el ancho de la pantall */
+}
+
+}
+
+h1 {
+	margin: 0px;
+}
+
+img {
+	max-width: 100%; /*Es muy importante para hacer el sitio de forma responsiva. Esto hace que la imagen crezca hasta cierto punto y si achico la pantalla se va achicango hasta el max ancho de pantalla*/
+	height: auto; /*se agrega x las dudas, en teoria funciona por defecto*/
+}
+
+ul,li {
+	list-style: none;
+}
+
+a {		
+	font-weight: 600; /*esta entre normal y bold (negrita)*/
+	text-decoration: none; /*le saco el subrayado*/
+	/*color:#d0ad6d;	*/
+}
+
+.clear{				/*para limpiar los float*/
+	clear:both;
+}
+
+
+
+/*clases especiales ---------------------------------------------------------------
+----------------------------------------------------------------------------------*/
+
+.active {	/*referencia visual,dejo marcado en que pagina estoy*/
+	/*color:#fff;*/
+	border-bottom: solid 1px #f21f2f;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.normal {
+	font-weight: normal;
+}
+
+
+
+/*Estilos particulares del sitio --------------------------------------------------
+----------------------------------------------------------------------------------*/
+
+/*Header -------------------------------------------------------------------------
+----------------------------------------------------------------------------------*/
+
+.bg-header {
+	width: 100%;
+	height: 80px;
+	margin: 0px;
+	padding: 0px;
+	position: fixed;
+	top: 0,
+	left:0;
+	background-color: rgba(0,0,0,0.8);
+	box-shadow: 0px 2px 6px rgba(0,0,0,0.35);
+	z-index: 9999;
+}
+
+header {
+	width: 100%;
+	height: 80px;
+	position: fixed;
+	left: 0px;
+	/*position: relative;
+	float: left;/*
+	padding: 10px;
+	/*background-color: #509394;*/
+	margin-bottom: 15px;
+	z-index: 9999;
+	/*border-bottom: solid 1px #509394;*/
+}
+
+
+	.header-menu {					/*el parrafo de abajo ahoro lo pongo en la clase que cree*/
+		width: 95%;
+		height: 80px;
+		position:relative;
+		float: left;
+		left: 35px;
+		top: 26px;
+	/*	margin:0;
+		padding: 0;*/
+	}
+
+	.header-menu ul {
+		/*margin:0;
+		padding: 0;*/
+		/*list-style: none;*/
+	}
+
+	.header-menu li {
+		width: 30%;
+		text-align: center;
+		position:relative;
+		float: left;
+	}
+
+	.header-menu li a {
+		/*display: block;		para que se vea mas grande el rectangulo cuando paso el mouse, sino se veria solo la palabra*/
+		width: 100%;
+		height:100%;
+		text-transform: uppercase;
+		font-size:20px;
+		color:#777;
+	}
+
+	.header-menu li a:hover {
+		color:#f8f8f8;
+		background-color:#5e7b86;
+	}
+
+	.header-languages {
+		width:5%;
+		position:relative;
+		float: right;
+		top: 12px;
+		right: 16px;
+	}
+
+	.header-languages img {
+		height: 20px;
+		width: 25px;
+		margin-top:5px;
+	}
+
+/*principal -----------------------------------------------------------------------
+----------------------------------------------------------------------------------*/
+
+.principal {
+	width: 100%;
+	height: auto;
+	display: flex;		/*para hacer que las columnas sean iguales de alto por mas que no tengan la misma altura real*/
+	position: relative;
+	float:left;
+	margin-top: 110px;
+	margin-bottom: 30px;
+	/*background-color: #fff;*/
+	box-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+}
+
+	.cv-box1 {
+		position: relative;
+		float:left;
+		/*width: 706px;*/
+		width: 60.3418%;
+		height: auto;
+		background-color: #fff
+	}
+		.titulo {
+			margin-left: 50px;
+			margin-top: 57px;
+			/*font-size: 27px;*/
+			font-size: 41px;
+			font-weight: 900;
+			line-height: 100%;
+		}
+
+		.estudios {
+			margin-left: 54px;
+			margin-top: 26px;
+			padding: 9px;
+			display: inline-block;
+			/*font-size: 16px;*/
+			font-size: 25px;
+			font-weight: 600;
+			border: solid 3px rgb(90,155,213);
+			border-radius: 25px 25px;
+		}
+
+		.caja-estudios {
+			width: 100%;
+			margin-left: 60px;
+		}
+
+		.caja-estudios h3 {
+			margin-top: 21px;
+			font-size: 24px;
+			font-weight: 700;
+		}
+
+		.caja-estudios h5 {
+			font-size: 19px;
+			font-weight: 400;
+		}
+
+		.conocimientos {
+			margin-left: 54px;
+			margin-top: 18px;
+			padding: 9px;
+			display: inline-block;
+			/*font-size: 16px;*/
+			font-size: 25px;
+			font-weight: 600;
+			border: solid 3px rgb(90,155,213);
+			border-radius: 25px 25px;
+		}
+		
+		.caja-ul {
+			width: 100%;
+			height: auto;
+			/*position: relative;
+			float:left;*/
+			padding-left: 60px;
+			margin-top: 21px;
+		}
+			.ul-1, .ul-2, .ul-3, .ul-4 {
+			position: relative;
+			float:left;
+			width: 25%;
+			}
+
+			.ul-1 li::first-letter, .ul-2 li::first-letter, .ul-3 li::first-letter, .ul-4 li::first-letter {
+				color: rgb(90,155,213);
+			}
+
+		.en-curso {
+			margin-left: 54px;
+			margin-top: 168px;
+			font-weight: normal;
+			/*font-size: 21px;*/
+		}
+
+		
+		.conocimientos-2 {
+			margin-left: 54px;
+			margin-top: 18px;
+			padding: 9px;
+			display: inline-block;
+			/*font-size: 16px;*/
+			font-size: 25px;
+			font-weight: 600;
+			border: solid 3px rgb(90,155,213);
+			border-radius: 25px 25px;
+		}
+		
+		.caja-ul2 {
+			width: 100%;
+			height: auto;
+			/*position: relative;
+			float:left;*/
+			padding-left: 60px;
+			margin-top: 19px;
+			/*font-size: 21px;*/
+		}
+
+			.ul-21 {
+			position: relative;
+			float:left;
+			width: 75%;
+			}
+		
+			.ul-22 {
+			position: relative;
+			float:left;
+			width: 25%;
+			}
+
+			
+			.ul-21 li::first-letter, .ul-22 li::first-letter, span::first-letter {
+				color: rgb(90,155,213);
+			}
+
+			.ul-21 li:nth-child(2) span  {
+				color: rgb(90,155,213);
+			}
+
+			.ul-22 li:nth-child(4)::first-letter  {
+				color: black;
+			}
+
+		.experiencia {
+			/*position: relative;
+			float:left;*/
+			margin-left: 54px;
+			margin-top: 15px;
+			padding: 9px;
+			display: inline-block;
+			/*font-size: 16px;*/
+			font-size: 25px;
+			font-weight: 600;
+			border: solid 3px rgb(90,155,213);
+			border-radius: 25px 25px;
+			overflow: hidden;
+		}
+
+		.caja-experiencia {
+			width: 100%;
+			/*height: auto;
+			position: relative;*/
+			/*float:left;*/
+			padding-left: 60px;
+			/*margin-top: 21px;*/
+		}
+
+			.caja-experiencia h3 {
+				/*margin-left: 54px;*/
+				margin-top: 24px;
+				font-size: 21px;
+				font-weight: 900;
+			}
+
+			.caja-experiencia h5 {
+				/*margin-left: 54px;*/
+				/*margin-top: 2px;*/
+				font-size: 21px;
+				font-weight: 400;
+			}
+
+		.acerca {
+			/*position: relative;
+			float:left;*/
+			margin-left: 54px;
+			margin-top: 21px;
+			padding: 9px;
+			display: inline-block;
+			/*font-size: 16px;*/
+			font-size: 25px;
+			font-weight: 600;
+			border: solid 3px rgb(90,155,213);
+			border-radius: 25px 25px;
+			overflow: hidden;
+		}
+
+		.caja-acerca {
+			width: 100%;
+			height: auto;
+			/*position: relative;
+			float:left;*/
+			padding-left: 60px;
+			padding-right: 60px;
+			margin-top: 12px;
+			text-align: justify;
+		}
+
+			.caja-acerca p {
+				margin-top: 8px;
+			}
+
+			.caja-acerca p:last-child {
+				font-style: italic;
+				color: rgb(127,127,127);
+				margin-bottom: 22px;
+			}
+
+
+		
+		
+
+		
+
+
+
+	.cv-box2 {
+		position: relative;
+		float:right;
+		/*width: 464px;*/
+		width: 39.6581%;
+		height: auto;
+		background-color: rgb(90,155,213);
+		text-align: center;
+	}
+
+	
+		.foto-personal {
+			/*position: relative;
+			float: left;*/
+			/*max-width: 100%;*/
+			/*height: 500px;*/
+			/*overflow: auto;*/
+			/*overflow: hidden;*/
+			/*border: solid 3px black;*/
+			width: 100%;
+		}
+		
+			.foto-personal img {
+				/*position: relative;
+				float: left;*/
+				width: auto;
+				/*height: auto;*/
+				display: inline;
+				padding-left: 16%;
+				padding-right: 16%;
+				/*margin-right: 17%;*/
+				/*margin-right: auto;*/
+				margin-top: 52px;
+				/*border: solid 3px green;*/
+			}
+
+		.nombre {
+			margin-top: 23px;
+			/*text-align: center;*/
+			/*margin-bottom: 70px;*/
+			/*margin-top: 43px;*/
+			font-size: 96px;
+			font-weight: 400;
+			color: white;
+			/*border: solid 3px red;*/
+			/*overflow: visible;*/
+			/*overflow: hidden;*/
+			line-height: 100%;
+		}
+
+		.apellido {
+			/*position: relative;
+			float: left;*/
+			/*width: 100%;*/
+			/*box-sizing: content-box;*/
+			/*display: block;*/
+			margin-top: 10px;
+			/*text-align: center;*/
+			/*float:right;*/
+			/*text-align: center;*/
+			/*margin-bottom: 70px;*/
+			/*top: 130px;*
+			/*margin-left: 0px;
+			margin-right: 0px;*/
+			font-size: 96px;
+			font-weight: 400;
+			/*font-weight: 700;*/
+			color: white;
+			/*border: solid 3px blue*/;
+			line-height: 100%;
+		}
+
+		.caja-contacto {
+			width: 100%;
+			/*position: relative;
+			float: left;*/
+			}
+
+			.caja-telefono {
+				width: 100%;
+			    height: auto;
+			    padding-left: 14px;
+			    padding-right: 10px;
+			    margin-top: 20px;
+			}
+
+				.caja-telefono img {
+					position: relative;
+				    float: left;
+				    width: 96px;
+				}
+
+				.caja-telefono h3 {
+					position: relative;
+				    float: left;
+				    display: inline;
+				    margin-top: 33px;
+				    margin-left: 20px;
+				    font-size: 37px;
+				    color: black;
+				}
+
+			.caja-linkedin {
+			    position: relative;
+				float: left;
+			    width: 100%;
+			    height: auto;
+			    padding-left: 25px;
+			    padding-right: 10px;
+			    /*margin-top: 10px;*/
+			}
+
+				.caja-linkedin img {
+					position: relative;
+				    float: left;
+				    width: 72px;
+				}
+
+				.caja-linkedin h3 {
+				    position: relative;
+				    float: left;
+				    margin-top: 21px;
+				    margin-left: 33px;
+				    font-size: 35px;
+				    color: black;
+				}
+
+			.caja-mail {
+				position: relative;
+				float: left;
+			    width: 100%;
+			    height: auto;
+			    padding-left: 25px;
+			    padding-right: 10px;
+			    margin-top: 3px;
+			}
+
+				.caja-mail img {
+					position: relative;
+				    float: left;
+				    width: 72px;
+				}
+
+				.caja-mail h3 {
+				    position: relative;
+				    float: left;
+				    margin-top: 21px;
+				    margin-left: 26px;
+				    font-size: 22px;
+				}
+		
+			.caja-web {
+				position: relative;
+				float: left;
+			    width: 100%;
+			    height: auto;
+			    padding-left: 15px;
+			    padding-right: 10px;
+			    margin-top: 7px;
+			}
+
+				.caja-web img {
+					position: relative;
+				    float: left;
+				    width: 93px;
+				}
+
+				.caja-web h3 {
+				    position: relative;
+				    float: left;
+				    margin-top: 21px;
+				    margin-left: 11px;
+				    font-size: 18px;
+				    color: black;
+				}
+			
+		
+
+		.aptitudes {
+			/*position: relative;
+			float: left;*/
+			margin-top: 18px;
+			/*text-align: center;
+			margin-left: auto;
+			margin-right: auto;*/
+			padding: 9px;
+			display: inline-block;
+			/*font-size: 16px;*/
+			font-size: 46px;
+			font-weight: 400;
+			color: white;
+			text-transform: uppercase;
+			border: solid 3px white;
+			border-radius: 25px 25px;
+			/*overflow: hidden;*/
+			/*overflow: auto;*/
+			line-height: 100%;
+		}
+
+		.caja-aptitudes {
+			width: 100%;
+			height: auto;
+			margin-right: 0px;
+			margin-left: 0px;
+			/*margin-top: 21px;*/
+		}
+
+			.caja-aptitudes h3 {
+				/*margin-left: 54px;*/
+				margin-top: 32px;
+				font-size: 30px;
+				font-weight: 700;
+				color: white;
+				line-height: 7px;
+				font-weight: 400;
+			}
+
+			.idiomas {
+				/*position: relative;
+				float: left;*/
+				margin-top: 60px;
+			/*	text-align: center;
+				margin-left: auto;
+				margin-right: auto;*/
+				padding: 9px;
+				display: inline-block;
+				/*font-size: 16px;*/
+				font-size: 46px;
+				font-weight: 400;
+				color: white;
+				text-transform: uppercase;
+				border: solid 3px white;
+				border-radius: 25px 25px;
+				/*overflow: hidden;*/
+				/*overflow: auto;*/
+				line-height: 100%;
+			}
+
+			.caja-idiomas {
+				width: 100%;
+				height: auto;
+				margin-right: 0px;
+				margin-left: 0px;
+				/*margin-top: 21px;*/
+			}
+
+				.caja-idiomas h3 {
+					/*margin-left: 54px;*/
+					margin-top: 32px;
+					font-size: 30px;
+					font-weight: 700;
+					color: white;
+					line-height: 7px;
+					font-weight: 400;
+				}
+
+				.caja-idiomas h3:nth-child(2) {
+					/*margin-left: 54px;*/
+					margin-top: 52px;
+					line-height: 25px;
+				}
+
+				.caja-idiomas h5 {
+				/*margin-left: 54px;*/
+				margin-top: 10px;
+				font-size: 21px;
+				font-weight: 400;
+				color: white;
+				line-height: 15px;
+			}
+
