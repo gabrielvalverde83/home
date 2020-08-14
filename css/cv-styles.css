@@ -718,10 +718,10 @@ header {
 		margin:0;
 		padding: 0;
 		z-index:99;
-		-webkit-transition:all 400ms ease-in-out;
+/*		-webkit-transition:all 400ms ease-in-out;
     	-moz-transition:all 400ms ease-in-out;
     	-o-transition:all 400ms ease-in-out;
-		transition:all 400ms ease-in-out;
+		transition:all 400ms ease-in-out;*/
 	}	
 
 	.header-menu li {
@@ -869,7 +869,7 @@ header {
 	}
 
 	.caja-telefono {
-			width: 65%;
+			width: 70%;
 		}
 
 			.caja-telefono img {
@@ -882,7 +882,7 @@ header {
 			}
 
 		.caja-linkedin {
-			width: 67%;
+			width: 73%;
 			margin-top:-1.5%;
 		}
 
