@@ -365,7 +365,7 @@ header {
 			margin-top: 19px;
 			padding: 9px;
 			display: inline-block;
-			font-size: 25px;
+			font-size: 2.5rem;
 			font-weight: 600;
 			border: solid 3px rgb(90,155,213);
 			border-radius: 25px 25px;
@@ -400,7 +400,6 @@ header {
 		float:left;
 		/*width: 422.094px;*/
 		width: 39.6581%;
-		height: 1608px;
 		background-color: rgb(90,155,213);
 		text-align: center;
 		padding-left: 15px;
@@ -441,8 +440,6 @@ header {
 			position: relative;
 			float: left;
 			padding-left: 10px;
-			/*padding-left: 2.369140523%;*/
-
 			}
 
 			.caja-telefono {
@@ -585,8 +582,7 @@ header {
 				height: auto;
 				margin-right: 0px;
 				margin-left: 0px;
-				/*margin-bottom: 61.69px; */
-				/*margin-bottom: 61px;*/
+				margin-bottom: 61px;
 			}
 
 				.caja-idiomas h3 {
@@ -613,6 +609,15 @@ header {
 
 /*sitio responsivo -----------------------------------------------------------------
 ----------------------------------------------------------------------------------*/
+
+
+@media screen and (min-width: 1187px) {
+	.principal {
+		display: flex;
+	}
+}
+
+
 
 
 @media screen and (max-width:1186px) {
@@ -690,8 +695,6 @@ header {
 
 @media screen and (max-width:900px) {
 	
-	/*hacer cambios en header*/
-
 	header {
 		height:60px;
 	}
@@ -715,6 +718,9 @@ header {
 		margin:0;
 		padding: 0;
 		z-index:99;
+		-webkit-transition:all 400ms ease-in-out;
+    	-moz-transition:all 400ms ease-in-out;
+    	-o-transition:all 400ms ease-in-out;
 		transition:all 400ms ease-in-out;
 	}	
 
@@ -761,6 +767,10 @@ header {
 	.ul-21, .ul-22 {
 		width: 100%;
 		}
+
+	.caja-acerca {
+		padding-right: 16px;
+	}
 
 
 
@@ -852,11 +862,69 @@ header {
 
 }
 
-@media screen and (max-width:450px) {
+@media screen and (max-width:501px) {
 
-	.cv-box1 {
-		font-size: 9px;
+	html, body {
+		font-size: 1.7vw;
 	}
+
+	.caja-telefono {
+			width: 65%;
+		}
+
+			.caja-telefono img {
+			    width: 12vw;
+			}
+
+			.caja-telefono h3 {
+				margin-top: 6%;
+				font-size: 6vw;
+			}
+
+		.caja-linkedin {
+			width: 67%;
+			margin-top:-1.5%;
+		}
+
+			.caja-linkedin img {
+			    width: 9vw;
+			}
+
+			.caja-linkedin h3 {
+				/*margin-top: 17px;*/
+				margin-top: 2.5%;
+				font-size: 6vw;
+			}
+
+		.caja-mail {
+			width: 68%;
+		}
+
+			.caja-mail img {
+			    display: none;
+			}
+
+			.caja-mail h3 {
+				margin-left: 0;
+				padding-left: 0;
+				margin-top: 4.5%;
+				font-size: 4.3vw;
+			}
+
+		.caja-web {
+			width: 68%;
+		}
+
+			.caja-web img {
+			    display: none;
+			}
+
+			.caja-web h3 {
+				margin-left: 0;
+				padding-left: 0;
+				margin-top: 4.5%;
+				font-size: 3.5vw;
+			}
 
 }
 
