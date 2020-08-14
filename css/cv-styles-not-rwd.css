@@ -26,21 +26,20 @@ summary {
 html,
 body {
 	height:100%;
-	/*font-size: 21px;*/
-	font-size: 62.5%;
 }
 
 body {
 	margin:0px; /*obligo al body a no tener el margen de 8px que trae por defecto, esto es para que me saque la linea blanca que queda arriba*/
 	font-family: Calibri, sans-serif;	/*fuente del texto*/
-	/*font-size: 21px;*/
-	font-size: 10px;
+	font-size: 21px;
 	line-height: 25px; 	/*Interlineado*/
 	background-color: black;	/*Color de fondo*/
 	background-image: url("../img/fondo2.png");
 	background-position: 50%;
-	background-size: cover; 
-	background-attachment: fixed;
+	/*background-repeat: no-repeat;*/
+	background-size: cover;  
+	 
+	/*color:#fff; color de texto, utiliza hexadecimales. si se repiten los valores coloca 3 en vez de 6*/
 }
 
 #pantalla {
@@ -79,6 +78,7 @@ ul,li {
 a {		
 	font-weight: 600; /*esta entre normal y bold (negrita)*/
 	text-decoration: none; /*le saco el subrayado*/
+	/*color:#d0ad6d;	*/
 }
 
 .clear{				/*para limpiar los float*/
@@ -91,6 +91,7 @@ a {
 ----------------------------------------------------------------------------------*/
 
 .active {	/*referencia visual,dejo marcado en que pagina estoy*/
+	/*color:#fff;*/
 	border-bottom: solid 1px #f21f2f;
 }
 
@@ -110,67 +111,74 @@ a {
 /*Header -------------------------------------------------------------------------
 ----------------------------------------------------------------------------------*/
 
+.bg-header {
+	width: 100%;
+	height: 80px;
+	margin: 0px;
+	padding: 0px;
+	position: fixed;
+	top: 0,
+	left:0;
+	background-color: rgba(0,0,0,0.8);
+	box-shadow: 0px 2px 6px rgba(0,0,0,0.35);
+	z-index: 9999;
+}
+
 header {
 	width: 100%;
 	height: 80px;
 	position: fixed;
-	top: 0px;
-	left:0px;
-	background-color: rgba(0,0,0,0.8);
+	left: 0px;
+	/*position: relative;
+	float: left;/*
+	padding: 10px;
+	/*background-color: #509394;*/
+	margin-bottom: 15px;
 	z-index: 9999;
+	/*border-bottom: solid 1px #509394;*/
 }
 
-	.logo {
-		position: relative;
-		float: left;
-	}
 
-	.logo img{
-		margin-left:40px;
-		margin-top:5px;
-		height: 70px;
-	}
-
-	.navbar-toggle {
-		display:block;
-		width:60px;
-		height:60px;
-		position:absolute;
-		top:0;
-		right:100px;
-		padding:15px;
-		background-color: transparent;
-		border:solid 3px #333;
-		cursor:pointer;
-		display:none;
-	}
-		.navbar-toggle .icon-bar {
-			height:3px;
-			display:block;			
-			background-color:#f5f4f4;
-		}
-		.navbar-toggle .icon-bar + .icon-bar {
-			margin-top:6px;
-		}
-
-	.header-menu {					
-		width: 77%;
+	.header-menu {					/*el parrafo de abajo ahoro lo pongo en la clase que cree*/
+		width: 95%;
 		height: 80px;
 		position:relative;
 		float: left;
-		margin-left: 30px;
+		left: 80px;
+		/*text-align: center;*/
+		/*top: 26px;*/
+	/*	margin:0;
+		padding: 0;*/
+	}
+
+	.header-menu ul {
+		/*margin:0;
+		padding: 0;*/
+		/*list-style: none;*/
 	}
 
 	.header-menu li {
-		width: 33%;
+		width: 20%;
 		text-align: center;
 		position:relative;
 		float: left;
 		top: 26px;
 	}
 
+	.header-menu li:nth-child(2) {
+		margin-left: 35px;
+	}
+
+	.header-menu li:first-child{
+		width: 15%;
+		left: 0px;
+		top:0px;
+	}
+
 	.header-menu li a {
+		/*display: block;	*/	/*para que se vea mas grande el rectangulo cuando paso el mouse, sino se veria solo la palabra*/
 		width: 100%;
+		/*height:100%;*/
 		text-transform: uppercase;
 		font-size:20px;
 		color:white;
@@ -181,16 +189,23 @@ header {
 		background-color:#5e7b86;
 	}
 
+	.logo img{
+		margin-top:5px;
+		height: 70px;
+	}
+
 	.header-languages {
+		width:5%;
 		position:relative;
 		float: right;
-		top: 27px;
-		right: 30px;
+		top: 12px;
+		right: 16px;
 	}
 
 	.header-languages img {
-		height: 27px;
-		width: 40px;
+		height: 20px;
+		width: 25px;
+		margin-top:5px;
 	}
 
 /*principal -----------------------------------------------------------------------
@@ -199,39 +214,39 @@ header {
 .principal {
 	width: 100%;
 	height: auto;
-	/*display: flex;		para hacer que las columnas sean iguales de alto por mas que no tengan la misma altura real*/
+	display: flex;		/*para hacer que las columnas sean iguales de alto por mas que no tengan la misma altura real*/
 	position: relative;
 	float:left;
-	margin-top: 125px;
+	margin-top: 110px;
 	margin-bottom: 30px;
-	box-shadow: 5px 5px 6px rgba(0,0,0,0.8);
+	/*background-color: #fff;*/
+	box-shadow: 2px 2px 6px rgba(0,0,0,0.5);
 }
-
-/*cv-box1  -----------------------------------------------------------------------
-----------------------------------------------------------------------------------*/
 
 	.cv-box1 {
 		position: relative;
 		float:left;
-		/*width: 657.891px;*/
+		/*width: 706px;*/
 		width: 60.3418%;
 		height: auto;
-		background-color: #fff;
-		padding-left: 54px;
-		padding-right: 15px;
+		background-color: #fff
 	}
 		.titulo {
-			margin-top: 42px;
-			font-size: 4.1rem;
+			margin-left: 50px;
+			margin-top: 57px;
+			/*font-size: 27px;*/
+			font-size: 41px;
 			font-weight: 900;
 			line-height: 100%;
 		}
 
 		.estudios {
+			margin-left: 54px;
 			margin-top: 26px;
 			padding: 9px;
 			display: inline-block;
-			font-size: 2.5rem;
+			/*font-size: 16px;*/
+			font-size: 25px;
 			font-weight: 600;
 			border: solid 3px rgb(90,155,213);
 			border-radius: 25px 25px;
@@ -239,25 +254,27 @@ header {
 
 		.caja-estudios {
 			width: 100%;
-			padding-left: 16px;
+			margin-left: 60px;
 		}
 
 		.caja-estudios h3 {
-			margin-top: 20px;
-			font-size: 2.4rem;
+			margin-top: 21px;
+			font-size: 24px;
 			font-weight: 700;
 		}
 
 		.caja-estudios h5 {
-			font-size: 1.9rem;
+			font-size: 19px;
 			font-weight: 400;
 		}
 
 		.conocimientos {
-			margin-top: 16px;
+			margin-left: 54px;
+			margin-top: 18px;
 			padding: 9px;
 			display: inline-block;
-			font-size: 2.5rem;
+			/*font-size: 16px;*/
+			font-size: 25px;
 			font-weight: 600;
 			border: solid 3px rgb(90,155,213);
 			border-radius: 25px 25px;
@@ -266,9 +283,10 @@ header {
 		.caja-ul {
 			width: 100%;
 			height: auto;
-			padding-left: 14px;
+			/*position: relative;
+			float:left;*/
+			padding-left: 60px;
 			margin-top: 21px;
-			font-size: 2.1rem;
 		}
 			.ul-1, .ul-2, .ul-3, .ul-4 {
 			position: relative;
@@ -281,18 +299,20 @@ header {
 			}
 
 		.en-curso {
-			margin-left: 16px;
+			margin-left: 54px;
 			margin-top: 168px;
 			font-weight: normal;
-			font-size: 2.1rem;
+			/*font-size: 21px;*/
 		}
 
 		
 		.conocimientos-2 {
-			margin-top: 23px;
+			margin-left: 54px;
+			margin-top: 18px;
 			padding: 9px;
 			display: inline-block;
-			font-size: 2.5rem;
+			/*font-size: 16px;*/
+			font-size: 25px;
 			font-weight: 600;
 			border: solid 3px rgb(90,155,213);
 			border-radius: 25px 25px;
@@ -301,21 +321,23 @@ header {
 		.caja-ul2 {
 			width: 100%;
 			height: auto;
-			padding-left: 6px;
-			margin-top: 14px;
-			font-size: 2.1rem;
+			/*position: relative;
+			float:left;*/
+			padding-left: 60px;
+			margin-top: 19px;
+			/*font-size: 21px;*/
 		}
 
 			.ul-21 {
 			position: relative;
 			float:left;
-			width: 78%;
+			width: 75%;
 			}
 		
 			.ul-22 {
 			position: relative;
-			float:right;
-			width: 22%;
+			float:left;
+			width: 25%;
 			}
 
 			
@@ -332,39 +354,51 @@ header {
 			}
 
 		.experiencia {
-			margin-top: 13px;
+			/*position: relative;
+			float:left;*/
+			margin-left: 54px;
+			margin-top: 15px;
 			padding: 9px;
 			display: inline-block;
-			font-size: 2.5rem;
+			/*font-size: 16px;*/
+			font-size: 25px;
 			font-weight: 600;
 			border: solid 3px rgb(90,155,213);
 			border-radius: 25px 25px;
+			overflow: hidden;
 		}
 
 		.caja-experiencia {
 			width: 100%;
-			padding-left: 16px;
+			/*height: auto;
+			position: relative;*/
+			/*float:left;*/
+			padding-left: 60px;
+			/*margin-top: 21px;*/
 		}
 
-			.caja-experiencia h3:first-child {
-				margin-top: 20px;
-			}
-
 			.caja-experiencia h3 {
-				margin-top: 26px;
-				font-size: 2.1rem;
+				/*margin-left: 54px;*/
+				margin-top: 24px;
+				font-size: 21px;
 				font-weight: 900;
 			}
 
 			.caja-experiencia h5 {
-				font-size: 2.1rem;
+				/*margin-left: 54px;*/
+				/*margin-top: 2px;*/
+				font-size: 21px;
 				font-weight: 400;
 			}
 
 		.acerca {
-			margin-top: 19px;
+			/*position: relative;
+			float:left;*/
+			margin-left: 54px;
+			margin-top: 21px;
 			padding: 9px;
 			display: inline-block;
+			/*font-size: 16px;*/
 			font-size: 25px;
 			font-weight: 600;
 			border: solid 3px rgb(90,155,213);
@@ -375,11 +409,12 @@ header {
 		.caja-acerca {
 			width: 100%;
 			height: auto;
-			padding-left: 16px;
-			padding-right: 35px;
+			/*position: relative;
+			float:left;*/
+			padding-left: 60px;
+			padding-right: 60px;
 			margin-top: 12px;
 			text-align: justify;
-			font-size: 2.1rem;
 		}
 
 			.caja-acerca p {
@@ -392,71 +427,104 @@ header {
 				margin-bottom: 22px;
 			}
 
-/*cv-box2  -----------------------------------------------------------------------
-----------------------------------------------------------------------------------*/
+
+		
+		
+
+		
+
+
 
 	.cv-box2 {
 		position: relative;
-		float:left;
-		/*width: 422.094px;*/
+		float:right;
+		/*width: 464px;*/
 		width: 39.6581%;
-		height: 1608px;
+		height: auto;
 		background-color: rgb(90,155,213);
 		text-align: center;
-		padding-left: 15px;
-    	padding-right: 15px;
 	}
 
+	
 		.foto-personal {
+			/*position: relative;
+			float: left;*/
+			/*max-width: 100%;*/
+			/*height: 500px;*/
+			/*overflow: auto;*/
+			/*overflow: hidden;*/
+			/*border: solid 3px black;*/
 			width: 100%;
 		}
 		
 			.foto-personal img {
+				/*position: relative;
+				float: left;*/
 				width: auto;
+				/*height: auto;*/
 				display: inline;
 				padding-left: 16%;
 				padding-right: 16%;
+				/*margin-right: 17%;*/
+				/*margin-right: auto;*/
 				margin-top: 52px;
+				/*border: solid 3px green;*/
 			}
 
 		.nombre {
 			margin-top: 23px;
+			/*text-align: center;*/
+			/*margin-bottom: 70px;*/
+			/*margin-top: 43px;*/
 			font-size: 96px;
-			/*font-size: 10vw;*/
 			font-weight: 400;
 			color: white;
+			/*border: solid 3px red;*/
+			/*overflow: visible;*/
+			/*overflow: hidden;*/
 			line-height: 100%;
 		}
 
 		.apellido {
+			/*position: relative;
+			float: left;*/
+			/*width: 100%;*/
+			/*box-sizing: content-box;*/
+			/*display: block;*/
 			margin-top: 10px;
+			/*text-align: center;*/
+			/*float:right;*/
+			/*text-align: center;*/
+			/*margin-bottom: 70px;*/
+			/*top: 130px;*
+			/*margin-left: 0px;
+			margin-right: 0px;*/
 			font-size: 96px;
 			font-weight: 400;
+			/*font-weight: 700;*/
 			color: white;
+			/*border: solid 3px blue*/;
 			line-height: 100%;
 		}
 
 		.caja-contacto {
 			width: 100%;
-			position: relative;
-			float: left;
-			padding-left: 10px;
-			/*padding-left: 2.369140523%;*/
-
+			/*position: relative;
+			float: left;*/
 			}
 
 			.caja-telefono {
 				width: 100%;
 			    height: auto;
+			    padding-left: 14px;
+			    padding-right: 10px;
 			    margin-top: 20px;
-			    margin-left: -16px;
-			    display: inline-block;
 			}
 
 				.caja-telefono img {
 					position: relative;
 				    float: left;
-				    width: 102px;
+				    width: 96px;
 				}
 
 				.caja-telefono h3 {
@@ -465,22 +533,24 @@ header {
 				    display: inline;
 				    margin-top: 33px;
 				    margin-left: 20px;
-				    font-size: 36px;
+				    font-size: 37px;
 				    color: black;
 				}
 
 			.caja-linkedin {
+			    position: relative;
+				float: left;
 			    width: 100%;
 			    height: auto;
-			    padding-left: 2px;
-			    margin-top: -15px;
-			    display: inline-block;
+			    padding-left: 25px;
+			    padding-right: 10px;
+			    /*margin-top: 10px;*/
 			}
 
 				.caja-linkedin img {
 					position: relative;
 				    float: left;
-				    width:74px;
+				    width: 72px;
 				}
 
 				.caja-linkedin h3 {
@@ -488,16 +558,18 @@ header {
 				    float: left;
 				    margin-top: 21px;
 				    margin-left: 33px;
-				    font-size: 33px;
+				    font-size: 35px;
 				    color: black;
 				}
 
 			.caja-mail {
+				position: relative;
+				float: left;
 			    width: 100%;
 			    height: auto;
-			    padding-left: 5px;
-			    margin-top: -8px;
-			    display: inline-block;
+			    padding-left: 25px;
+			    padding-right: 10px;
+			    margin-top: 3px;
 			}
 
 				.caja-mail img {
@@ -511,14 +583,17 @@ header {
 				    float: left;
 				    margin-top: 21px;
 				    margin-left: 26px;
-				    font-size: 21px;
+				    font-size: 22px;
 				}
 		
 			.caja-web {
+				position: relative;
+				float: left;
 			    width: 100%;
 			    height: auto;
-			    margin-left: -16px;
-			    display: inline-block;
+			    padding-left: 15px;
+			    padding-right: 10px;
+			    margin-top: 7px;
 			}
 
 				.caja-web img {
@@ -532,22 +607,30 @@ header {
 				    float: left;
 				    margin-top: 21px;
 				    margin-left: 11px;
-				    font-size: 17px;
+				    font-size: 18px;
 				    color: black;
 				}
 			
 		
 
 		.aptitudes {
+			/*position: relative;
+			float: left;*/
 			margin-top: 18px;
+			/*text-align: center;
+			margin-left: auto;
+			margin-right: auto;*/
 			padding: 9px;
 			display: inline-block;
+			/*font-size: 16px;*/
 			font-size: 46px;
 			font-weight: 400;
 			color: white;
 			text-transform: uppercase;
 			border: solid 3px white;
 			border-radius: 35px 35px;
+			/*overflow: hidden;*/
+			/*overflow: auto;*/
 			line-height: 100%;
 		}
 
@@ -556,9 +639,11 @@ header {
 			height: auto;
 			margin-right: 0px;
 			margin-left: 0px;
+			/*margin-top: 21px;*/
 		}
 
 			.caja-aptitudes h3 {
+				/*margin-left: 54px;*/
 				margin-top: 32px;
 				font-size: 30px;
 				font-weight: 700;
@@ -568,15 +653,23 @@ header {
 			}
 
 			.idiomas {
+				/*position: relative;
+				float: left;*/
 				margin-top: 60px;
+			/*	text-align: center;
+				margin-left: auto;
+				margin-right: auto;*/
 				padding: 9px;
 				display: inline-block;
+				/*font-size: 16px;*/
 				font-size: 46px;
 				font-weight: 400;
 				color: white;
 				text-transform: uppercase;
 				border: solid 3px white;
 				border-radius: 35px 35px;
+				/*overflow: hidden;*/
+				/*overflow: auto;*/
 				line-height: 100%;
 			}
 
@@ -585,11 +678,11 @@ header {
 				height: auto;
 				margin-right: 0px;
 				margin-left: 0px;
-				/*margin-bottom: 61.69px; */
-				/*margin-bottom: 61px;*/
+				/*margin-top: 21px;*/
 			}
 
 				.caja-idiomas h3 {
+					/*margin-left: 54px;*/
 					margin-top: 32px;
 					font-size: 30px;
 					font-weight: 700;
@@ -599,264 +692,17 @@ header {
 				}
 
 				.caja-idiomas h3:nth-child(2) {
+					/*margin-left: 54px;*/
 					margin-top: 52px;
 					line-height: 25px;
 				}
 
 				.caja-idiomas h5 {
+				/*margin-left: 54px;*/
 				margin-top: 10px;
 				font-size: 21px;
 				font-weight: 400;
 				color: white;
 				line-height: 15px;
 			}
-
-/*sitio responsivo -----------------------------------------------------------------
-----------------------------------------------------------------------------------*/
-
-
-@media screen and (max-width:1186px) {
-	
-	.contenedor{
-		width: 658px;
-	}
-
-
-	.cv-box1 {
-		width: 100%;
-		padding-left: 30px;
-	}
-
-		.titulo {
-			text-align: center;
-		}
-
-	.cv-box2 {
-		width: 100%;
-		height: auto;
-	}
-		
-
-		.caja-contacto {
-			padding-left: 0;
-		}
-
-			.caja-telefono {
-				width: 383px;
-				display: inline-block;
-				margin-right: auto;
-				margin-left: auto;
-			}
-
-			.caja-linkedin {
-				width: 377px;
-				display: inline-block;
-				margin-right: auto;
-				margin-left: auto;
-			}
-
-			.caja-mail {
-				width: 454px;
-				display: inline-block;
-				margin-right: auto;
-				margin-left: auto;
-			}
-
-			.caja-mail h3 {
-				font-size: 25px;
-			}
-
-			.caja-web {
-				max-width: 533px;
-				display: inline-block;
-				margin-right: auto;
-				margin-left: auto;
-			}
-
-			.caja-web h3 {
-				font-size: 25px;
-			}
-
-			.caja-web img {
-				margin-left: -16px;
-			}
-
-		.caja-idiomas {
-			margin-bottom: 61px;
-		}
-
-}
-
-
-@media screen and (max-width:900px) {
-	
-	/*hacer cambios en header*/
-
-	header {
-		height:60px;
-	}
-
-	.logo img{
-		margin-left:20px;
-		margin-top:5px;
-		height: 50px;
-	}
-
-	.navbar-toggle {
-		display:block;
-	}
-
-	.header-menu {
-		width:100%;
-		height:auto;
-		position:fixed;
-		top:0;
-		left:-1850px;
-		margin:0;
-		padding: 0;
-		z-index:99;
-		transition:all 400ms ease-in-out;
-	}	
-
-	.header-menu li {
-		width:100%;	
-		margin:0;
-		padding:0;
-		top:0;		
-		float:left;
-		background-color:black;
-		/*border:solid 0.5px #333;*/
-	}
-
-	.nheader-menu li a:hover {	
-		background-color:#000;		
-	}
-	
-	.navbar-toggle:focus ~ .header-menu {
-		left:0px;
-	}
-
-	.header-languages {
-		top: 17px;
-	}
-
-}
-
-
-@media screen and (max-width:670px) {
-
-	.contenedor {
-	padding-left:0px;		
-	padding-right:0px;		
-	}
-
-	.cv-box1 {
-		padding-left: 15px;
-	}
-
-	.ul-1, .ul-2, .ul-3, .ul-4 {
-		width: 50%;
-		}
-
-	.ul-21, .ul-22 {
-		width: 100%;
-		}
-
-
-
-	.nombre, .apellido {
-		font-size: 20vw;
-	}
-
-	.caja-contacto {
-			padding-left: 0px;
-			margin-top: 60px;
-			margin-bottom: 20px;
-		}
-
-		.caja-telefono {
-			width: 80%;
-		}
-
-			.caja-telefono img {
-			    width: 15vw;
-			}
-
-			.caja-telefono h3 {
-				margin-top: 7%;
-				font-size: 7vw;
-			}
-
-		.caja-linkedin {
-			width: 80%;
-		}
-
-			.caja-linkedin img {
-			    width: 12vw;
-			}
-
-			.caja-linkedin h3 {
-				/*margin-top: 17px;*/
-				margin-top: 4.5%;
-				font-size: 7vw;
-			}
-
-		.caja-mail {
-			width: 95%;
-		}
-
-			.caja-mail img {
-			    width: 12vw;
-			}
-
-			.caja-mail h3 {
-				/*margin-top: 17px;*/
-				margin-top: 4.5%;
-				font-size: 5vw;
-			}
-
-		.caja-web {
-			max-width: 95%;
-		}
-
-			.caja-web img {
-				/*margin-left: -60px;*/
-			    width: 12vw;
-			}
-
-			.caja-web h3 {
-				/*margin-top: 17px;*/
-				margin-top: 2.5%;
-				font-size: 4.3vw;
-			}
-
-		.aptitudes {
-			font-size: 7vw;
-		}
-
-			.caja-aptitudes h3 {
-			font-size: 5.5vw;
-			}
-
-		.idiomas {
-			font-size: 7vw;
-		}
-
-			.caja-idiomas h3 {
-			font-size: 5.5vw;
-			}
-
-			.caja-idiomas h5 {
-			font-size: 4vw;
-			}
-
-}
-
-@media screen and (max-width:450px) {
-
-	.cv-box1 {
-		font-size: 9px;
-	}
-
-}
 
