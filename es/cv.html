@@ -9,7 +9,7 @@
 
 	<title>Curriculum Vitae</title>
 
-	<!-- <link rel="stylesheet" href="css/normalize.css"> --> <!-- carga hoja de estilos normalize para compatibilidad de navegadores -->
+	<link rel="stylesheet" href="../css/normalize.css"> <!-- carga hoja de estilos normalize para compatibilidad de navegadores -->
 	
 	<link rel="stylesheet" href="../css/cv-styles.css" type="text/css">	<!-- hoja de estilo CSS -->
 
@@ -28,115 +28,113 @@
 </head>
 <body>
 	<div id="pantalla">
-		<div class="bg-header"></div>
-			<div class="contenedor">
-				<header class="header">
-					<div class="header-menu">	<!-- Menu principal -->
-						<ul>
-							<li><a href="index.html">Acerca de mi</a></li> 
-							<li><a href="cv.html" class="active">curriculum vitae</a></li> <!-- le agrego la clase para que me indique cual es la pagina que esta abierta en este momento. Se lo aplico a a para que el ancho me quede del tamaño del texto, por eso no se lo aplico a li-->
-							<li><a href="portafolio.html">Portafolio</a></li>
+		<header class="header">
+			
+			<div class="logo">
+				<a href="index.html"><img src="../img/logo2.png" alt="logo-marca"></a></div>
+			
+			<button class="navbar-toggle">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			
+			<div class="header-menu">	<!-- Menu principal -->
+				<ul>
+					<li><a href="index.html">Acerca de mi</a></li> 
+					<li><a href="cv.html" class="active">curriculum vitae</a></li> <!-- le agrego la clase para que me indique cual es la pagina que esta abierta en este momento. Se lo aplico a a para que el ancho me quede del tamaño del texto, por eso no se lo aplico a li-->
+					<li><a href="portafolio.html">Portafolio</a></li>
+				</ul>
+			</div>	<!-- fin header-menu -->
+
+
+					
+			<!-- Seleccion de idiomas -->
+			<div class="header-languages">
+				<a href="en/cv-en.html"><img src="../img/lenguaje-eng.png" alt="Change lenguage" title="Change lenguage"></a>
+			</div>	<!-- fin header-lenguages -->
+		
+		</header>	<!-- fin header -->
+			
+		<div class="contenedor">
+			<section class="principal">
+				<article class="cv-box1">
+					<div class="titulo">Programador Full Stack - Ingeniero</div>
+					<h2 class="estudios">Estudios</h2>
+					<div class="caja-estudios">
+						<h3>Título: Ingeniero en Electronica y Electricidad</h3>
+						<h5>Universidad de Mendoza<span class="italic">(2015)</span></h5>
+						<h5 class="italic">Tesis: Recolector de variables de bicicleta con Arduino+GPS+GSM+SD</h5>
+					</div>
+					<h2 class="conocimientos">Conocimientos informáticos</h2>
+					<div class="caja-ul">
+						<ul class="ul-1">
+							<li>> HTML</li>
+							<li>> CSS</li>
+							<li>> JavaScript</li>
+							<li>> PHP (*)</li>
+						</ul>
+						<ul class="ul-2">
+							<li>> SQL</li>
+							<li>> MongoDB</li>
+							<li>> Angular</li>
+							<li>> NodeJS</li>
+							<li>> Laravel (*)</li>
+						</ul>
+						<ul class="ul-3">
+							<li>> jQuery</li>
+							<li>> MeanStack</li>
+							<li>> Express</li>
+							<li>> ECMAScript</li>
+							<li>> Symfony (*)</li>
+						</ul>
+						<ul class="ul-4">
+							<li>> Bootstrap</li>
+							<li>> WordPress</li>
+							<li>> Git</li>
+							<li>> GitHub</li>
+							<li>> React (*)</li>
 						</ul>
 					</div>
-					
-					<!-- Seleccion de idiomas -->
-					<div class="header-languages">
-						<ul>
-							<li><a href="en/index-en.html"><img src="../img/lenguaje-eng.png" alt=""></a></li>
-							<li><a href="index.html"><img src="../img/lenguaje-esp.png" alt=""></a></li>
+					<h4 class="en-curso italic">(*) - en curso</h4>
+					<h2 class="conocimientos-2">Otros conocimientos que aportan</h2>
+					<div class="caja-ul2">
+						<ul class="ul-21">
+							<li>> Reparación y mantenimiento de PCs</li>
+							<li>> Scrum–Metodologías Ágiles&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>></span> Coaching</li>
+							<li>> Programa de Habilidades Directivas <span class="italic">(Aden2019)</span></li>
+							<li>> Industria 4.0 <span class="italic">(UTN 2019)</span></li>
+						</ul>
+						<ul class="ul-22">
+							<li>> Arduino</li>
+							<li>> PLC</li>
+							<li>> Micro-</li>
+							<li>Contro</li>
 						</ul>
 					</div>
-				</header>
-
-				<section class="principal">
-					<article class="cv-box1">
-						<div class="titulo">Programador Full Stack - Ingeniero</div>
-						<h2 class="estudios">Estudios</h2>
-						<div class="caja-estudios">
-							<h3>Título: Ingeniero en Electronica y Electricidad</h3>
-							<h5>Universidad de Mendoza<span class="italic">(2015)</span></h5>
-							<h5 class="italic">Tesis: Recolector de variables de bicicleta con Arduino+GPS+GSM+SD</h5>
-						</div>
-						<h2 class="conocimientos">Conocimientos informáticos</h2>
-						<div class="caja-ul">
-							<ul class="ul-1">
-								<li>> HTML</li>
-								<li>> CSS</li>
-								<li>> JavaScript</li>
-								<li>> PHP (*)</li>
-							</ul>
-							<ul class="ul-2">
-								<li>> SQL</li>
-								<li>> MongoDB</li>
-								<li>> Angular</li>
-								<li>> NodeJS</li>
-								<li>> Laravel (*)</li>
-							</ul>
-							<ul class="ul-3">
-								<li>> jQuery</li>
-								<li>> MeanStack</li>
-								<li>> Express</li>
-								<li>> ECMAScript</li>
-								<li>> Symfony (*)</li>
-							</ul>
-							<ul class="ul-4">
-								<li>> Bootstrap</li>
-								<li>> WordPress</li>
-								<li>> Git</li>
-								<li>> GitHub</li>
-								<li>> React (*)</li>
-							</ul>
-						</div>
-						<h4 class="en-curso italic">(*) - en curso</h4>
-						<h2 class="conocimientos-2">Otros conocimientos que aportan</h2>
-						<div class="caja-ul2">
-							<ul class="ul-21">
-								<li>> Reparación y mantenimiento de PCs</li>
-								<li>> Scrum–Metodologías Ágiles&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>></span> Coaching</li>
-								<li>> Programa de Habilidades Directivas <span class="italic">(Aden2019)</span></li>
-								<li>> Industria 4.0 <span class="italic">(UTN 2019)</span></li>
-							</ul>
-							<ul class="ul-22">
-								<li>> Arduino</li>
-								<li>> PLC</li>
-								<li>> Micro-</li>
-								<li>Contro</li>
-							</ul>
-						</div>
-						<h2 class="experiencia">Experiencia</h2>
-						<div class="caja-experiencia">
-							<h3>Freelancer - Autónomo<span class="italic normal"> (Actualmente)</span></h3>
-							<h3>Empresa: Managager Electric<span class="italic normal"> (2019 - 2020)</span></h3>
-							<h5>Puesto: Coordinador de Oficina Técnica</h5>
-							<h5>Obras Eléctricas en general, paneles solares</h5>
-							<h3>Empresa: Coral Montajes Eléctricos<span class="italic normal"> (2015 - 2019)</span></h3>
-							<h5>Puesto: Jefe de Oficina Técnica - Representante Técnico</h5>
-							<h5>Obras Eléctricas en general</h5>
-							<h3>Autónomo<span class="italic normal"> (2007 - 2013)</span></h3>
-							<h5>Reparación PCs, obras eléctricas en general, mantenimiento</h5>
-							<h5>industrial, programación PLC</h5>
-						</div>
-						<h2 class="acerca">Acerca de mi</h2>
-						<div class="caja-acerca">
-							<p>Soy una persona que ama la tecnología. Hace un tiempo redescubrí que la programación es lo mío y voy por ello! Estoy aprendiendo nuevas tecnologías y lenguajes, y tengo en mente seguir en ello.</p>
-							<p>Me apasiona el poder automatizar, mejorar y optimizar procesos y métodos, cuidando recursos y agregando valor al producto.</p>
-							<p>Quiero aprender y poder participar de proyectos que me desafíen y me hagan crecer en lo profesional y en lo personal.</p>
-							<p>Quiero trabajar en un equipo donde se proponga, se aporte, se colabore y entre todos logremos concretar grandes objetivos y que nos dejen aprendizajes.</p>
-							<p>Quiero que la empresa donde trabaje sea reconocida y crezca, con trabajos de calidad e innovadores. Y quiero ser parte de todo esto!</p>
-							<p>// Consultar por certificados</p>
-						</div>
-						
-
-					
-					
-
-
-
-
-
-
-
-					</article>
+					<h2 class="experiencia">Experiencia</h2>
+					<div class="caja-experiencia">
+						<h3>Freelancer - Autónomo<span class="italic normal"> (Actualmente)</span></h3>
+						<h3>Empresa: Managager Electric<span class="italic normal"> (2019 - 2020)</span></h3>
+						<h5>Puesto: Coordinador de Oficina Técnica</h5>
+						<h5>Obras Eléctricas en general, paneles solares</h5>
+						<h3>Empresa: Coral Montajes Eléctricos<span class="italic normal"> (2015 - 2019)</span></h3>
+						<h5>Puesto: Jefe de Oficina Técnica - Representante Técnico</h5>
+						<h5>Obras Eléctricas en general</h5>
+						<h3>Autónomo<span class="italic normal"> (2007 - 2013)</span></h3>
+						<h5>Reparación PCs, obras eléctricas en general, mantenimiento</h5>
+						<h5>industrial, programación PLC</h5>
+					</div>
+					<h2 class="acerca">Acerca de mi</h2>
+					<div class="caja-acerca">
+						<p>Soy una persona que ama la tecnología. Hace un tiempo redescubrí que la programación es lo mío y voy por ello! Estoy aprendiendo nuevas tecnologías y lenguajes, y tengo en mente seguir en ello.</p>
+						<p>Me apasiona el poder automatizar, mejorar y optimizar procesos y métodos, cuidando recursos y agregando valor al producto.</p>
+						<p>Quiero aprender y poder participar de proyectos que me desafíen y me hagan crecer en lo profesional y en lo personal.</p>
+						<p>Quiero trabajar en un equipo donde se proponga, se aporte, se colabore y entre todos logremos concretar grandes objetivos y que nos dejen aprendizajes.</p>
+						<p>Quiero que la empresa donde trabaje sea reconocida y crezca, con trabajos de calidad e innovadores. Y quiero ser parte de todo esto!</p>
+						<p>// Consultar por certificados</p>
+					</div>
+				</article> <!-- fin article -->
 
 					<article class="cv-box2">
 						<h2 class="foto-personal">
