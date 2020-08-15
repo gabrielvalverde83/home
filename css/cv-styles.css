@@ -862,7 +862,7 @@ header {
 
 }
 
-@media screen and (max-width:501px) {
+@media screen and (max-width:500px) {
 
 	html, body {
 		font-size: 1.7vw;
@@ -878,11 +878,12 @@ header {
 
 			.caja-telefono h3 {
 				margin-top: 6%;
+				margin-left: 0;
 				font-size: 6vw;
 			}
 
 		.caja-linkedin {
-			width: 73%;
+			width: 70%;
 			margin-top:-1.5%;
 		}
 
@@ -891,8 +892,8 @@ header {
 			}
 
 			.caja-linkedin h3 {
-				/*margin-top: 17px;*/
 				margin-top: 2.5%;
+				margin-left: 10px;
 				font-size: 6vw;
 			}
 
