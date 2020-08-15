@@ -734,8 +734,8 @@ header {
 		/*border:solid 0.5px #333;*/
 	}
 
-	.nheader-menu li a:hover {	
-		background-color:#000;		
+	.header-menu li a:hover {	
+		background-color:rgb(91,155,213);		
 	}
 	
 	.navbar-toggle:focus ~ .header-menu {
@@ -869,7 +869,7 @@ header {
 	}
 
 	.caja-telefono {
-			width: 65%;
+			width: 70%;
 		}
 
 			.caja-telefono img {
@@ -882,7 +882,7 @@ header {
 			}
 
 		.caja-linkedin {
-			width: 67%;
+			width: 73%;
 			margin-top:-1.5%;
 		}
 
