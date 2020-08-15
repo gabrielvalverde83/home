@@ -718,10 +718,10 @@ header {
 		margin:0;
 		padding: 0;
 		z-index:99;
-/*		-webkit-transition:all 400ms ease-in-out;
+		-webkit-transition:all 400ms ease-in-out;
     	-moz-transition:all 400ms ease-in-out;
     	-o-transition:all 400ms ease-in-out;
-		transition:all 400ms ease-in-out;*/
+		transition:all 400ms ease-in-out;
 	}	
 
 	.header-menu li {
@@ -734,8 +734,8 @@ header {
 		/*border:solid 0.5px #333;*/
 	}
 
-	.nheader-menu li a:hover {	
-		background-color:#000;		
+	.header-menu li a:hover {	
+		background-color:rgb(91,155,213);		
 	}
 	
 	.navbar-toggle:focus ~ .header-menu {
