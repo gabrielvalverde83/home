@@ -188,11 +188,56 @@
 	</div>
 
 
-<script src="../js/jquery-3.2.1.min.js"></script>
+	<a href="#" class="to-top"></a>
 
-	<!-- Menú desplegable -->
+	<script src="../js/jquery-3.2.1.min.js"></script>
+
+	<!--
 	<script>	
 		$(document).ready(function(){
+			$('navbar-toggle').click.(function(){
+				$('header-menu').css('left',0);
+
+
+			});
+		});
+
+	</script>
+	-->
+
+
+	<script>	
+			$('.navbar-toggle').click(function(){
+				$('.header-menu').css('left',0);
+			$
+
+			
+			});
+
+	</script>
+
+
+	 <script>
+	 	var $boton_top	= $('.to-top');
+	 	$boton_top.hide();
+
+	 	$(window).scroll(function(){
+	 		if ( $(this).scrollTop() > 300 ) {
+	 			$boton_top.fadeIn();
+	 		} else {
+	 			$boton_top.fadeOut();
+	 		}
+	 	});
+
+	 	$boton_top.click(function(event){
+	 		event.preventDefault();
+	 		$('html, body').animate({
+	 			scrollTop:0},1200)
+	 		return false;
+	 	});
+
+ 	</script>
+		
 
 
 
