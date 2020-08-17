@@ -41,8 +41,12 @@
 			
 			<div class="header-menu">	<!-- Menu principal -->
 				<ul>
+					<li class="menu-cerrar">
+						<img src="../img/logo2.png" alt="logo-marca">
+						<h3>X</h3>
+					</li>
 					<li><a href="index.html">Acerca de mi</a></li> 
-					<li><a href="cv.html" class="active">curriculum vitae</a></li> <!-- le agrego la clase para que me indique cual es la pagina que esta abierta en este momento. Se lo aplico a a para que el ancho me quede del tamaño del texto, por eso no se lo aplico a li-->
+					<li><a href="cv.html" class="active">Curriculum vitae</a></li> <!-- le agrego la clase para que me indique cual es la pagina que esta abierta en este momento. Se lo aplico a a para que el ancho me quede del tamaño del texto, por eso no se lo aplico a li-->
 					<li><a href="portafolio.html">Portafolio</a></li>
 				</ul>
 			</div>	<!-- fin header-menu -->
@@ -188,56 +192,11 @@
 	</div>
 
 
-	<a href="#" class="to-top"></a>
+	<a href="#" class="to-top"></a>	  <!-- boton que sube al principio del sitio -->
 
 	<script src="../js/jquery-3.2.1.min.js"></script>
 
-	<!--
-	<script>	
-		$(document).ready(function(){
-			$('navbar-toggle').click.(function(){
-				$('header-menu').css('left',0);
-
-
-			});
-		});
-
-	</script>
-	-->
-
-
-	<script>	
-			$('.navbar-toggle').click(function(){
-				$('.header-menu').css('left',0);
-			$
-
-			
-			});
-
-	</script>
-
-
-	 <script>
-	 	var $boton_top	= $('.to-top');
-	 	$boton_top.hide();
-
-	 	$(window).scroll(function(){
-	 		if ( $(this).scrollTop() > 300 ) {
-	 			$boton_top.fadeIn();
-	 		} else {
-	 			$boton_top.fadeOut();
-	 		}
-	 	});
-
-	 	$boton_top.click(function(event){
-	 		event.preventDefault();
-	 		$('html, body').animate({
-	 			scrollTop:0},1200)
-	 		return false;
-	 	});
-
- 	</script>
-		
+	<script src="../js/my-scripts.js"></script>
 
 
 
