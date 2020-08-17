@@ -132,7 +132,7 @@ header {
 	}
 
 	.navbar-toggle {
-		display:block;
+		/*display:block;*/
 		width:60px;
 		height:60px;
 		position:absolute;
@@ -159,6 +159,7 @@ header {
 		position:relative;
 		float: left;
 		margin-left: 30px;
+		left:0;
 	}
 
 	.header-menu li {
@@ -191,6 +192,18 @@ header {
 	.header-languages img {
 		height: 27px;
 		width: 40px;
+	}
+
+	.menu-cerrar {
+		display: none;
+	}
+
+	.menu-cerrar li {
+		width: 100%;
+		height: auto;
+		text-transform: uppercase;
+		font-size:20px;
+		color:white;
 	}
 
 /*principal -----------------------------------------------------------------------
@@ -607,7 +620,7 @@ header {
 				line-height: 15px;
 			}
 
-	.to-top {
+	.to-top {				/*boton para subir al inicio*/
 		display:block;
 		background:url(../img/to-top.svg) no-repeat center center;
 		width: 60px;
@@ -617,7 +630,7 @@ header {
 	  	right: 10px;
 	  	border-radius: 5px;
 	  	box-shadow: 0 0 10px rgba(0, 0, 0, .05);
-		background-color: rgba(0, 12, 255, .7);
+		background-color: rgba(93, 93, 93, .7);
 	}
 
 /*sitio responsivo -----------------------------------------------------------------
@@ -627,6 +640,10 @@ header {
 @media screen and (min-width: 1187px) {
 	.principal {
 		display: flex;
+	}
+
+	.header-menu {					
+		left:0;
 	}
 }
 
@@ -710,6 +727,11 @@ header {
 	
 	header {
 		height:60px;
+
+	}
+
+	.principal {
+		margin-top: 100px;
 	}
 
 	.logo img{
@@ -736,22 +758,61 @@ header {
     	-o-transition:all 400ms ease-in-out;
 		transition:all 400ms ease-in-out;
 	}	
+	
+	.menu-cerrar {
+		display: block;
+	}
+
+	/*.menu-cerrar li {
+		display:inline-block;
+		width: 100%;
+		height: auto;
+		text-transform: uppercase;
+		font-size:20px;
+		color:white;
+		border:solid 5px red;
+	}*/
+
+	.menu-cerrar img {
+		width: 73px;
+		float:relative;
+		margin-left: 9%;
+		
+	}
+
+	.menu-cerrar h3 {
+		color: white;
+		font-size: 25px;
+		float: right;
+		margin-right:10px;
+		margin-top:10px;
+		border: solid 1px red;
+		padding:15px;
+		border:solid 3px #333;
+	}
+
+	.header-menu li h3:hover {	
+		background-color:rgb(91,155,213);		
+	}
 
 	.header-menu li {
 		width:100%;	
 		margin:0;
 		padding:0;
 		top:0;		
-		float:left;
-		background-color:black;
-		/*border:solid 0.5px #333;*/
+		float:left;	
+		background-color:black;	
 	}
 
 	.header-menu li a:hover {	
 		background-color:rgb(91,155,213);		
 	}
 	
-	/*.navbar-toggle:focus ~ .header-menu {
+
+	
+	/* no funciona en IOS mobile
+
+	.navbar-toggle:focus ~ .header-menu {
 		left:0px;
 	}*/
 
