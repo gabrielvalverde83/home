@@ -102,6 +102,19 @@ a {
 	font-weight: normal;
 }
 
+.to-top {				/*boton para subir al inicio*/
+		display:block;
+		background:url(../img/to-top.svg) no-repeat center center;
+		width: 60px;
+		height: 60px;
+	  	position: fixed;
+	  	bottom: 40px;
+	  	right: 10px;
+	  	border-radius: 5px;
+	  	box-shadow: 0 0 10px rgba(0, 0, 0, .05);
+		background-color: rgba(93, 93, 93, .7);
+}
+
 
 
 /*Estilos particulares del sitio --------------------------------------------------
@@ -159,7 +172,11 @@ header {
 		position:relative;
 		float: left;
 		margin-left: 30px;
-		left:0;
+		/*left:0;*/
+	}
+
+	.menu-ubicacion {
+		left: 0;
 	}
 
 	.header-menu li {
@@ -178,8 +195,7 @@ header {
 	}
 
 	.header-menu li a:hover {
-		color:#f8f8f8;
-		background-color:#5e7b86;
+		background-color:rgb(91,155,213);	
 	}
 
 	.header-languages {
@@ -620,18 +636,7 @@ header {
 				line-height: 15px;
 			}
 
-	.to-top {				/*boton para subir al inicio*/
-		display:block;
-		background:url(../img/to-top.svg) no-repeat center center;
-		width: 60px;
-		height: 60px;
-	  	position: fixed;
-	  	bottom: 40px;
-	  	right: 10px;
-	  	border-radius: 5px;
-	  	box-shadow: 0 0 10px rgba(0, 0, 0, .05);
-		background-color: rgba(93, 93, 93, .7);
-	}
+	
 
 /*sitio responsivo -----------------------------------------------------------------
 ----------------------------------------------------------------------------------*/
@@ -640,10 +645,6 @@ header {
 @media screen and (min-width: 1187px) {
 	.principal {
 		display: flex;
-	}
-
-	.header-menu {					
-		left:0;
 	}
 }
 
@@ -749,7 +750,6 @@ header {
 		height:auto;
 		position:fixed;
 		top:0;
-		left:-1850px;
 		margin:0;
 		padding: 0;
 		z-index:99;
@@ -757,27 +757,24 @@ header {
     	-moz-transition:all 400ms ease-in-out;
     	-o-transition:all 400ms ease-in-out;
 		transition:all 400ms ease-in-out;
+	}
+
+	.menu-ubicacion {
+		left: -1850px;
+	}
+
+	.menuResponsivo-ubicacion {
+		left:0;
 	}	
 	
 	.menu-cerrar {
 		display: block;
 	}
 
-	/*.menu-cerrar li {
-		display:inline-block;
-		width: 100%;
-		height: auto;
-		text-transform: uppercase;
-		font-size:20px;
-		color:white;
-		border:solid 5px red;
-	}*/
-
 	.menu-cerrar img {
 		width: 73px;
 		float:relative;
-		margin-left: 9%;
-		
+		margin-left: 9%;	
 	}
 
 	.menu-cerrar h3 {
@@ -803,12 +800,6 @@ header {
 		float:left;	
 		background-color:black;	
 	}
-
-	.header-menu li a:hover {	
-		background-color:rgb(91,155,213);		
-	}
-	
-
 	
 	/* no funciona en IOS mobile
 
@@ -819,7 +810,6 @@ header {
 	.header-languages {
 		top: 17px;
 	}
-
 }
 
 

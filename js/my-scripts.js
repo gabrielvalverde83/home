@@ -2,14 +2,28 @@ $(document).ready(function(){
 
 	//abrir y cerrar menu en sitio responsivo ///////////
 
-
 	$('.navbar-toggle').click(function(){
-		$('.header-menu').css('left',0);
+		$('.header-menu').removeClass('menu-ubicacion');
+		$('.header-menu').addClass('menuResponsivo-ubicacion');
 	});
 	
 	$('.menu-cerrar h3').click(function(){
-		$('.header-menu').css('left',-1850);
-	})
+		$('.header-menu').removeClass('menuResponsivo-ubicacion');
+		$('.header-menu').addClass('menu-ubicacion');
+	});
+
+
+	/////////////////////////////////////////////////////////
+
+	// $('.navbar-toggle').click(function(){
+	// 	$('#header-menu').css('left',0);
+	// });
+	
+	// $('.menu-cerrar h3').click(function(){
+	// 	$('#header-menu').css('left',-1850);
+	// })
+
+	//////////////////////////////////////////////////////////
 
 	// var ventana_ancho = $(window).width();
 
