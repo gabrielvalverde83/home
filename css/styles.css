@@ -238,10 +238,6 @@ header {
 		border:solid 3px #333;
 	}
 
-	.header-menu li h3:hover {	
-		background-color:rgb(91,155,213);		
-	}
-
 
 
 /*principal -----------------------------------------------------------------------
@@ -434,6 +430,11 @@ footer {
 
 	html, body {
 		font-size: 1.7vw;
+	}
+
+	.principal {
+		padding-left: 20px;
+		padding-right: 20px;
 	}
 
 	footer {
