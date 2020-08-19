@@ -36,11 +36,13 @@ body {
 	/*font-size: 21px;*/
 	font-size: 10px;
 	line-height: 25px; 	/*Interlineado*/
-	background-color: black;	/*Color de fondo*/
-	background-image: url("../img/fondo2.png");
+	background-color: white;	/*Color de fondo*/
+	background-image: url("../img/construccion3.jpg");
 	background-position: 50%;
-	background-size: cover; 
+/*	background-size: cover; */
+	background-size: contain;  
 	background-attachment: fixed;
+	background-repeat: no-repeat;
 }
 
 #pantalla {
@@ -264,25 +266,8 @@ header {
 	box-shadow: 5px 5px 6px rgba(0,0,0,0.8);
 }
 
-	.principal h1 {
-		text-align: center;
-		font-size: 4.0rem;
-		color:rgb(91,155,213);
-		padding-bottom: 5px;
-	}
-
-	.principal p {
-		font-size: 2.0rem;
-		margin-top: 8px;
-		text-align: justify;
-	}
-
-	.principal p:last-child {
-		font-size: 2.5rem;
-		margin-left: 70px;
-		margin-top: 15px;
-		font-style: italic;
-		font-weight: 600;
+	.principal img {
+		width: 50%;
 	}
 
 
