@@ -13,9 +13,14 @@
 	
 	<link rel="stylesheet" href="../css/cv-styles.css" type="text/css">	<!-- hoja de estilo CSS -->
 
-	<!-- <link rel="icon" href="carpeta/imagen.png" sizes="32x32" type="image/png"> --> 	<!-- favicon -->
-	
-	<!-- <meta property="og:image" content="http://url/img/frente.jpg"> -->	<!-- esto es para decirle a facebook cual es la imagen principal del sitio / va la ruta absoluta -->
+	<link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+	<link rel="mask-icon" href="../img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<!-- <meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff"> -->
+
+	<meta property="og:image" content="https://gabrielvalverde83.github.io/home/img/foto-cv.png">	<!-- esto es para decirle a facebook cual es la imagen principal del sitio / va la ruta absoluta -->
 	
 	<meta name="description" content="blog personal de Gabriel Valverde - Programador Full Stack - Angular - React - HTML5 - CSS - JavaScript">	<!-- descripcion para google -->
 
@@ -31,7 +36,7 @@
 		<header class="header">
 			
 			<div class="logo">
-				<a href="index.html"><img src="../img/logo2.png" alt="logo-marca"></a></div>
+				<a href="../index.html"><img src="../img/logo2.png" alt="logo-marca"></a></div>
 			
 			<button class="navbar-toggle">
 				<span class="icon-bar"></span>
@@ -45,15 +50,15 @@
 						<img src="../img/logo2.png" alt="logo-marca">
 						<h3>X</h3>
 					</li>
-					<li><a href="index.html">Acerca de mi</a></li> 
-					<li><a href="cv.html" class="active">Curriculum vitae</a></li> <!-- le agrego la clase para que me indique cual es la pagina que esta abierta en este momento. Se lo aplico a a para que el ancho me quede del tamaño del texto, por eso no se lo aplico a li-->
-					<li><a href="portafolio.html">Portafolio</a></li>
+					<li><a href="about-es.html">Acerca de mi</a></li> 
+					<li><a href="cv-es.html" class="active">Curriculum vitae</a></li> <!-- le agrego la clase para que me indique cual es la pagina que esta abierta en este momento. Se lo aplico a a para que el ancho me quede del tamaño del texto, por eso no se lo aplico a li-->
+					<li><a href="portfolio-es.html">Portafolio</a></li>
 				</ul>
 			</div>	<!-- fin header-menu -->
 				
 			<!-- Seleccion de idiomas -->
 			<div class="header-languages">
-				<a href="en/cv-en.html"><img src="../img/lenguaje-eng.png" alt="Change lenguage" title="Change lenguage"></a>
+				<a href="../en/cv-en.html"><img src="../img/lenguaje-eng.png" alt="Change lenguage" title="Change lenguage"></a>
 			</div>	<!-- fin header-lenguages -->
 		
 		</header>	<!-- fin header -->
@@ -124,8 +129,7 @@
 						<h5>Puesto: Jefe de Oficina Técnica - Representante Técnico</h5>
 						<h5>Obras Eléctricas en general</h5>
 						<h3>Autónomo<span class="italic normal"> (2007 - 2013)</span></h3>
-						<h5>Reparación PCs, obras eléctricas en general, mantenimiento</h5>
-						<h5>industrial, programación PLC</h5>
+						<h5>Reparación PCs, obras eléctricas en general, mantenimiento industrial, programación PLC</h5>
 					</div>
 					<h2 class="acerca">Acerca de mi</h2>
 					<div class="caja-acerca">
@@ -136,58 +140,60 @@
 						<p>Quiero que la empresa donde trabaje sea reconocida y crezca, con trabajos de calidad e innovadores. Y quiero ser parte de todo esto!</p>
 						<p>// Consultar por certificados</p>
 					</div>
-				</article> <!-- fin article -->
+				</article> <!-- fin article cv-box1-->
 
-					<article class="cv-box2">
-						<h2 class="foto-personal">
-							<img src="../img/foto-cv.png" alt="foto-personal">
-						</h2>
-						<h2 class="nombre">Gabriel</h2>
-						<h2 class="apellido">Valverde</h2>
-						<div class="caja-contacto">
-							<div class="caja-telefono">
-								<a href="tel:+542614670895"><img src="../img/whatsapp.png" alt="logo-whatsapp"></a>
-								<a href="tel:+542614670895"><h3>+54-2614670895</h3></a>
-							</div>
-							<div class="caja-linkedin">
-								<a href="https://www.linkedin.com/in/gabrielvalverde83/"><img src="../img/linkedin.png" alt="logo-linkedin"></a>
-								<a href="https://www.linkedin.com/in/gabrielvalverde83/"><h3>gabrielvalverde83</h3></a>
-							</div>
-							<div class="caja-mail">
-								<img src="../img/mail.png" alt="logo-mail">
-								<h3>gabrielvalverde83@hotmail.com</h3>
-							</div>
-							<div class="caja-web">
-								<a href="https://gabrielvalverde83.github.io/home/"><img src="../img/web.png" alt="logo-web"></a>
-								<a href="https://gabrielvalverde83.github.io/home/"><h3>https://gabrielvalverde83.github.io/home</h3></a>
-							</div>
+				<article class="cv-box2">
+					<h2 class="foto-personal">
+						<img src="../img/foto-cv.png" alt="foto-personal">
+					</h2>
+					<h2 class="nombre">Gabriel</h2>
+					<h2 class="apellido">Valverde</h2>
+					<div class="caja-contacto">
+						<div class="caja-telefono">
+							<a href="tel:+542614670895"><img src="../img/whatsapp.png" alt="logo-whatsapp"></a>
+							<a href="tel:+542614670895"><h3>+54-2614670895</h3></a>
 						</div>
-						<h2 class="aptitudes">Aptitudes</h2>
-						<div class="caja-aptitudes">
-							<h3>Comunicación y apertura</h3>
-							<h3>Dinamismo y adaptación</h3>
-							<h3>Creatividad e innovación</h3>
-							<h3>Logro de metas y objetivos</h3>
-							<h3>Superación y resiliencia</h3>
-							<h3>Optimización y mejoras</h3>
-						<h2 class="idiomas">Idiomas</h2>
-						<div class="caja-idiomas">
-							<h3>Español<span class="italic"> (nativo)</span></h3>
-							<h3>Ingles<span class="italic"> (nivel intermedio)</span></h3>
-							<h5>Heather Institute<span class="italic normal"> (1997-2003)</span></h5>
-							<h5>In English<span class="italic normal"> (2019)</span></h5>
+						<div class="caja-linkedin">
+							<a href="https://www.linkedin.com/in/gabrielvalverde83/"><img src="../img/linkedin.png" alt="logo-linkedin"></a>
+							<a href="https://www.linkedin.com/in/gabrielvalverde83/"><h3>gabrielvalverde83</h3></a>
 						</div>
+						<div class="caja-mail">
+							<a href="mailto:gabrielvalverde83@hotmail.com"><img src="../img/mail.png" alt="logo-mail"></a>
+							<a href="mailto:gabrielvalverde83@hotmail.com"><h3>gabrielvalverde83@hotmail.com</h3></a>
 						</div>
-					</article>
-					
+						<div class="caja-web">
+							<a href="https://gabrielvalverde83.github.io/home/"><img src="../img/web.png" alt="logo-web"></a>
+							<a href="https://gabrielvalverde83.github.io/home/"><h3>https://gabrielvalverde83.github.io/home</h3></a>
+						</div>
+					</div>
+					<h2 class="aptitudes">Aptitudes</h2>
+					<div class="caja-aptitudes">
+						<h3>Comunicación y apertura</h3>
+						<h3>Dinamismo y adaptación</h3>
+						<h3>Creatividad e innovación</h3>
+						<h3>Logro de metas y objetivos</h3>
+						<h3>Superación y resiliencia</h3>
+						<h3>Optimización y mejoras</h3>
+					<h2 class="idiomas">Idiomas</h2>
+					<div class="caja-idiomas">
+						<h3>Español<span class="italic"> (nativo)</span></h3>
+						<h3>Ingles<span class="italic"> (nivel intermedio)</span></h3>
+						<h5>Heather Institute<span class="italic normal"> (1997-2003)</span></h5>
+						<h5>In English<span class="italic normal"> (2019)</span></h5>
+					</div>
+				</article>	<!-- cierre del articulo cv-box2 -->
+			</section>   <!-- cierre de la seccion principal -->
+		</div>	<!-- cierre del contenedor -->
 
-
-				</section>
-
-			
-
-		</div>
-	</div>
+		<footer>
+			<div class="caja-footer">
+				<h3>Sitio desarrollado por Gabriel Valverde</h3>
+				<h3>&nbsp;&nbsp;-&nbsp;&nbsp;Año: 2020</h3>
+				<a href="mailto:gabrielvalverde83@hotmail.com"><h3>&nbsp;&nbsp;-&nbsp;&nbsp;gabrielvalverde83@hotmail.com</h3></a>
+			</div>
+		</footer>
+	
+	</div>   <!-- cierre pantalla -->
 
 
 	<a href="#" class="to-top"></a>	  <!-- boton que sube al principio del sitio -->

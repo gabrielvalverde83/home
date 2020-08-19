@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- declaro la ventana grafica para el RWD-->
+
+	<meta http-equiv="X-UA-compatible" content="IE-Edge"> <!-- compatibilidad con IE -->
+
+	<title>Curriculum Vitae</title>
+
+	<link rel="stylesheet" href="../css/normalize.css"> <!-- carga hoja de estilos normalize para compatibilidad de navegadores -->
+	
+	<link rel="stylesheet" href="../css/portfolio-styles.css" type="text/css">	<!-- hoja de estilo CSS -->
+
+	<link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+	<link rel="mask-icon" href="../img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<!-- <meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff"> -->
+
+	<meta property="og:image" content="https://gabrielvalverde83.github.io/home/img/foto-cv.png">	<!-- esto es para decirle a facebook cual es la imagen principal del sitio / va la ruta absoluta -->
+	
+	<meta name="description" content="blog personal de Gabriel Valverde - Programador Full Stack - Angular - React - HTML5 - CSS - JavaScript">	<!-- descripcion para google -->
+
+	<!-- codigo para validar IE -->
+	<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+<body ontouchstart>
+	<div id="pantalla">
+		<header class="header">
+			
+			<div class="logo">
+				<a href="../index.html"><img src="../img/logo2.png" alt="logo-marca"></a></div>
+			
+			<button class="navbar-toggle">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			
+			<div class="header-menu menu-ubicacion">	<!-- Menu principal -->
+				<ul>
+					<li class="menu-cerrar">
+						<img src="../img/logo2.png" alt="logo-marca">
+						<h3>X</h3>
+					</li>
+					<li><a href="about-es.html">Acerca de mi</a></li> 
+					<li><a href="cv-es.html">Curriculum vitae</a></li> <!-- le agrego la clase para que me indique cual es la pagina que esta abierta en este momento. Se lo aplico a a para que el ancho me quede del tamaño del texto, por eso no se lo aplico a li-->
+					<li><a href="portfolio-es.html" class="active">Portafolio</a></li>
+				</ul>
+			</div>	<!-- fin header-menu -->
+				
+			<!-- Seleccion de idiomas -->
+			<div class="header-languages">
+				<a href="../en/portfolio-en.html"><img src="../img/lenguaje-eng.png" alt="Change lenguage" title="Change lenguage"></a>
+			</div>	<!-- fin header-lenguages -->
+		
+		</header>	<!-- fin header -->
+			
+		
+		<footer>
+			<div class="caja-footer">
+				<h3>Sitio desarrollado por Gabriel Valverde</h3>
+				<h3>&nbsp;&nbsp;-&nbsp;&nbsp;Año: 2020</h3>
+				<a href="mailto:gabrielvalverde83@hotmail.com"><h3>&nbsp;&nbsp;-&nbsp;&nbsp;gabrielvalverde83@hotmail.com</h3></a>
+			</div>
+		</footer>
+	
+	</div>   <!-- cierre pantalla -->
+
+
+	<a href="#" class="to-top"></a>	  <!-- boton que sube al principio del sitio -->
+
+	<script src="../js/jquery-3.2.1.min.js"></script>
+
+	<script src="../js/my-scripts.js"></script>
+
+
+
+</body>
+</html>
