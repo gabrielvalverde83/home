@@ -268,7 +268,9 @@ header {
 		text-align: center;
 		font-size: 4.0rem;
 		color:rgb(91,155,213);
-		padding-bottom: 5px;
+		margin-bottom: 20px;
+		margin-top: 20px;
+
 	}
 
 	.principal p {
